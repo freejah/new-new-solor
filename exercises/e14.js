@@ -7,9 +7,8 @@ import { data } from "../data/data";
 export function getOrbitalPeriodsSum(data) {
   // Your code goes here...
   const orbital = data.asteroids
-  .reduce((sum,ast)=> sum + ast.orbitalPeriod,0);
-  const averageOrbital = orbital / orbital.length;
-  return averageOrbital
+  .reduce((sum,ast) => sum + ast.orbitalPeriod,0);
+  return orbital
 
 }
 
