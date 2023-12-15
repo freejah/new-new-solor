@@ -20,9 +20,7 @@ export function getGreatestDiscoveryYear(data) {
   let maxOccurrences = -1;
   let yearWithMostOccurrences = null;
 
-  // Iterate over the keys using a for...in loop
   for (let num in count) {
-    // Ensure the key is not inherited from the prototype chain
     if (count[num] !== undefined) {
       const occurrences = count[num];
       if (occurrences > maxOccurrences) {
